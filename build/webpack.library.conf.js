@@ -33,6 +33,10 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src')],
+        query: {
+            cacheDirectory: true,
+            plugins: [["import", { libraryName: "antd", style: "css"}]]
+        }
       },
       {
         test: /\.scss$/,
