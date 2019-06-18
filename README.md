@@ -14,6 +14,9 @@ npm i rfcalendar
 ### 引入包
 
 ``` js
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import moment from 'moment';
 import { Calendar, CalendarControls } from 'rfcalendar';
 
 class Index extends Component{
@@ -143,6 +146,7 @@ render(
   <Index />,
   document.getElementById('app')
 )
+
 ```
 
 ### 自定义样式

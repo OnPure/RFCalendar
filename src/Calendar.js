@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import Month from './Month';
 import { range } from './utils';
-import Row from 'antd/lib/row/index';
-import Col from 'antd/lib/col/index';
+import { Row, Col } from 'antd';
+// import Col from 'antd/lib/col/index';
 import '@/rfcalendar.less';
 
 class Calendar extends Component{
