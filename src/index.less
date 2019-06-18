@@ -1,0 +1,234 @@
+@import '~antd/dist/antd.css';
+@color0 : #0000FF;
+@color1 : #6495ED;
+@color2 : #7FFF00;
+@color3 : #8A2BE2;
+@color4 : #228B22;
+@color5 : #FF1493;
+@color6 : #FF69B4;
+@color7 : #FFA07A;
+@color8 : #FFA500;
+@color9 : #FF0000;
+@color10 : #8B4513;
+@color11 : #870D0D;
+
+@clicked: red;
+@black: #28323F;
+@yellow: red;
+
+:global {
+  div.fullCalendar {
+    border-collapse: collapse;
+    .color0{
+      line-height: 1 !important;
+      background-color: @color0 !important;
+    }
+
+    .color1{
+      line-height: 1 !important;
+      background-color: @color1 !important;
+    }
+
+    .color2{
+      line-height: 1 !important;
+      background-color: @color2 !important;
+    }
+
+    .color3{
+      line-height: 1 !important;
+      background-color: @color3 !important;
+    }
+
+    .color4{
+      line-height: 1 !important;
+      background-color: @color4 !important;
+    }
+
+    .color5{
+      line-height: 1 !important;
+      background-color: @color5 !important;
+    }
+
+    .color6{
+      line-height: 1 !important;
+      background-color: @color6 !important;
+    }
+
+    .color7{
+      line-height: 1 !important;
+      background-color: @color7 !important;
+    }
+
+    .color8{
+      line-height: 1 !important;
+      background-color: @color8 !important;
+    }
+
+    .color9{
+      line-height: 1 !important;
+      background-color: @color9 !important;
+    }
+
+    .color10{
+      line-height: 1 !important;
+      background-color: @color10 !important;
+    }
+
+    .color11{
+      line-height: 1 !important;
+      background-color: @color11 !important;
+    }
+    table{
+      width: 100%;
+      thead {
+        background-color: @black;
+        color: white;
+        margin-bottom: 3px;
+        th {
+          font-weight: lighter;
+          padding: 10px 3px;
+          &.bolder {
+            font-weight: bold;
+          }
+        }
+      }
+      tbody {
+        font-size: 0.8em;
+      }
+      tr {
+        background-color: @black;
+        td{
+          text-align: center;
+          padding: 5px;
+          cursor: pointer;
+          min-width: 10px;
+          background-color: inherit;
+          color: #fff;
+          &.month-name {
+            font-weight: bold;
+            text-align: left;
+            cursor: default;
+            border-left: none;
+          }
+          &.next-month, &.prev-month {
+            color: transparent;
+            cursor: default;
+            pointer-events: none;
+          }
+          &.week-separator {
+            pointer-events: none;
+            padding: 0;
+            width: 8px;
+            min-width: 0;
+          }
+          &.winter {
+            background-color: rgba(159, 220, 249, 0.32) !important;
+          }
+          &.spring {
+            background-color: rgba(145, 212, 110, 0.32) !important;
+          }
+          &.summer {
+            background-color: rgba(255, 232, 91, 0.32) !important;
+          }
+          &.autumn {
+            background-color: rgba(246, 151, 60, 0.32) !important;
+          }
+          &.holidays {
+            font-weight: bold;
+            color: @clicked;
+            text-decoration: underline;
+          }
+          &.weekend {
+            font-style: italic;
+            font-weight: bold;
+          }
+          &.bolder {
+            font-weight: bold;
+            background: @black;
+          }
+          &.clicked{
+            background-color: @clicked !important;
+            font-weight: bold !important;
+          }
+          &.winter.range,
+          &.winter.selected {
+            background-color: rgba(159, 220, 249, 1);
+            font-weight: bold;
+          }
+          &.winter.clicked {
+            background-color: @clicked;
+            font-weight: bold;
+          }
+          &.spring.range,
+          &.spring.selected {
+            background-color: rgba(145, 212, 110, 1);
+            font-weight: bold;
+          }
+          &.summer.range,
+          &.summer.selected {
+            background-color: rgba(255, 232, 91, 1);
+            font-weight: bold;
+          }
+          &.autumn.range,
+          &.autumn.selected {
+            background-color: rgba(246, 151, 60, 1);
+          }
+        }
+        &:last-child td {
+          border-bottom: none;
+        }
+      }
+    }
+    .month_thead{
+      text-align: center;
+      font-size: 18px;
+      height: 24px;
+      line-height: 24px !important;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+
+  div.fullCalendar-controls {
+    margin: 0 auto;
+    display: table;
+    font-size: 50px;
+    line-height: 55px;
+    div {
+      display: inline;
+    }
+    .current-year {
+      margin: 0 30px;
+      color: #fff;
+    }
+    .control {
+      font-weight: bolder;
+      color: #fff;
+      font-size: 0.8em;
+      cursor: pointer;
+    }
+    .today {
+      position: absolute;
+      right: 15px;
+      line-height: 35px;
+      font-size: 0.6em;
+      text-transform: uppercase;
+    }
+  }
+
+  div#calendar {
+    position: relative;
+    border-radius: 5px;
+    background-color: @black;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+}

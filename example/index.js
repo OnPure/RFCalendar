@@ -1,20 +1,10 @@
-# react 全日历组件
-
-> 基于react开发的一个非常漂亮的全日历组件
-预览地址：http://xiaxiangfeng.github.io/flip-clock/index.html
-
-## 从NPM下载包
-
-``` npm
-npm i rfcalendar
-```
-
-## 使用实例
-
-### 引入包
-
-``` js
-import { Calendar, CalendarControls } from 'rfcalendar';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import Button from 'antd/lib/Button';
+import message from 'antd/lib/message';
+// import {Form, Card, Button,message} from 'antd';
+import moment from 'moment';
+import { Calendar, CalendarControls } from '../lib/index.js';
 
 class Index extends Component{
   constructor(props){
@@ -143,30 +133,3 @@ render(
   <Index />,
   document.getElementById('app')
 )
-```
-
-### 自定义样式
-
-#### 编写样式覆盖即可
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run all tests
-npm test
-```
