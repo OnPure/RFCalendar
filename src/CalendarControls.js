@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '@/rfcalendar.less';
 
 const propTypes = {
   year: PropTypes.number.isRequired,
