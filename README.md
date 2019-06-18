@@ -1,7 +1,7 @@
 # react 全日历组件
 
 > 基于react开发的一个非常漂亮的全日历组件
-预览地址：http://xiaxiangfeng.github.io/flip-clock/index.html
+预览地址：https://github.com/OnPure/RFCalendar/index.html
 
 ## 从NPM下载包
 
