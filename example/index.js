@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import moment from 'moment';
-import { Calendar, CalendarControls } from 'rfcalendar';
+import { Calendar, CalendarControls } from '../lib';
 
 class Index extends Component{
   constructor(props){
