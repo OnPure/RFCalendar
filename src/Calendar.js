@@ -4,7 +4,7 @@ import Month from './Month';
 import { range } from './utils';
 import Row from 'antd/lib/Row/index';
 import Col from 'antd/lib/Col/index';
-import '@/index.less';
+import '@/rfcalendar.less';
 
 class Calendar extends Component{
   static defaultProps = {
