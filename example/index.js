@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Button from 'antd/lib/Button';
-import message from 'antd/lib/message';
-// import {Form, Card, Button,message} from 'antd';
 import moment from 'moment';
 import { Calendar, CalendarControls } from '../lib/index.js';
 
