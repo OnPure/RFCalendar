@@ -116,7 +116,7 @@ class Calendar extends Component{
 
     const months = [0,1,2,3,4,5,6,7,8,9,10,11].map(month => (
       month !== 0 && month !== 4 && month !== 8 ?
-        <Col span={5} offset={1}>
+        <Col span={5} offset={1} key={month}>
           <Month
             month={month}
             key={`month-${month}`}
@@ -125,7 +125,7 @@ class Calendar extends Component{
             {...this.props}
             selectingRange={selectingRange}
           />
-        </Col> : <Col span={5}>
+        </Col> : <Col span={5} key={month}>
           <Month
             month={month}
             key={`month-${month}`}
