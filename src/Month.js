@@ -249,14 +249,14 @@ class Month extends Component {
         daysArr[j][i] = days[i + j * 7];
       }
     }
-    daysArr.map((item) => {
+    daysArr.map((item, index) => {
       let dateCells = [];
       for(let i = 0; i < 7; i++){
         dateCells.push(
           item[i]
         )
       }
-      tableHtml.push(<tr>{dateCells}</tr>);
+      tableHtml.push(<tr key={index}>{dateCells}</tr>);
     })
     return tableHtml;
   }
